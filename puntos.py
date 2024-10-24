@@ -7,7 +7,7 @@ mp_face_mesh = mp.solutions.face_mesh
 face_mesh = mp_face_mesh.FaceMesh(static_image_mode=True, max_num_faces=1, min_detection_confidence=0.5)
 
 # Cargar la imagen
-image_path = 'C:/Users/Suseth Sandoval/Documents/jafet/7mo semestre/Graficacion/puntos/foto.jpeg'
+image_path = 'ruta de la imagen que se va a convertir'
 image = cv2.imread(image_path)
 rgb_image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 
@@ -64,7 +64,7 @@ if results.multi_face_landmarks:
 df_facial_points = pd.DataFrame(facial_points_dict)
 
 # Guardar el DataFrame en un archivo CSV
-output_csv_path = 'C:/Users/Suseth Sandoval/Documents/jafet/7mo semestre/Graficacion/puntos/facial_points.csv'
+output_csv_path = 'ruta en la que el csv se va a guardar'
 df_facial_points.to_csv(output_csv_path, index=False)
 
 print(f"Los puntos faciales han sido guardados en {output_csv_path}")
