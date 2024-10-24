@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import cv2
 
 # Cargar el archivo CSV con los puntos faciales
-csv_path = 'C:/Users/Suseth Sandoval/Documents/jafet/7mo semestre/Graficacion/puntos/facial_points.csv'
+csv_path = 'ruta del csv generado con el de puntos.py'
 keyfacial_df = pd.read_csv(csv_path)
 
 # Elegir una imagen aleatoria de la columna 'Image'
