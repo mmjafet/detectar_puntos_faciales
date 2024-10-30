@@ -67,4 +67,4 @@ df_facial_points = pd.DataFrame(facial_points_dict)
 output_csv_path = 'ruta en la que el csv se va a guardar'
 df_facial_points.to_csv(output_csv_path, index=False)
 
-print(f"Los puntos faciales han sido guardados en {output_csv_path}")
+print(f"Los puntos faciales han sido guardados en el siguiente archivo {output_csv_path}")
